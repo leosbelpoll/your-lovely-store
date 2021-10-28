@@ -1,0 +1,29 @@
+{
+  "name": "your-lovely-store",
+  "version": "0.0.1",
+  "description": "Awesome project developed with TypeORM.",
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.2",
+    "@types/node": "^16.11.6",
+    "@types/uuid": "^8.3.1",
+    "gql2ts": "^1.10.1",
+    "nodemon": "^2.0.14",
+    "ts-node": "10.4.0",
+    "tslint": "^6.1.3",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "4.4.4"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "graphql-import": "^1.0.2",
+    "graphql-yoga": "^1.18.3",
+    "pg": "^8.7.1",
+    "reflect-metadata": "^0.1.13",
+    "typeorm": "0.2.38",
+    "uuid": "^8.3.2"
+  },
+  "scripts": {
+    "start": "NODE_ENV=development nodemon --exec ts-node --files src/index.ts",
+    "gen-schema-types": "gql2ts src/schema.graphql -o src/types/schema.d.ts"
+  }
+}
